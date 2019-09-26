@@ -33,15 +33,15 @@ class Nav extends React.Component {
     let navMenu = document.querySelector('.nav-menu-part');
     let lis = document.querySelectorAll('.nav-menu-part li');
     let a = document.querySelectorAll('.nav-menu-part a')
-    if(document.getElementById('home').getBoundingClientRect().top < 0){
+    if(document.getElementById('home').getBoundingClientRect().top < 20){
       a[0].classList.add('active');
       a[1].classList.remove('active');
       a[2].classList.remove('active');
-      if(document.getElementById('projects').getBoundingClientRect().top < 0){
+      if(document.getElementById('projects').getBoundingClientRect().top < 20){
         a[0].classList.remove('active');
         a[1].classList.add('active');
         a[2].classList.remove('active');
-        if(document.getElementById('contact').getBoundingClientRect().top < 0){
+        if(document.getElementById('contact').getBoundingClientRect().top < 20){
           a[0].classList.remove('active');
           a[1].classList.remove('active');
           a[2].classList.add('active'); 
