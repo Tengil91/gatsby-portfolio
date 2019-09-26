@@ -68,6 +68,7 @@ body {
   background-attachment: fixed;
   width: 100vw;
   min-height: 100vh;
+  overflow-x: hidden;
 }
 .main-header-texts {
   background-image: linear-gradient(#00000002, #00000005 90%);
@@ -82,22 +83,6 @@ body {
 }
 .main-header-texts h1 {
   font-size: 36px;
-}
-.header-darkness1 {
-  transform: translateX(1px);
-  width: 0;
-  height: 0;
-  border-top: 100vh solid black;
-  border-right: 100vw solid transparent;
-  position: absolute;
-}
-.header-darkness2 {
-  transform: translateX(-1px);
-  width: 0;
-  height: 0;
-  border-bottom: 100vh solid  black;
-  border-left: 100vw solid transparent;
-  position: absolute;
 }
 .projects-container {
   min-height: 100vh;
@@ -356,4 +341,20 @@ footer {
   .project-description-content {
     width: 67%;
   }
+.header-darkness1 {
+  transform: translateX(1px);
+  width: 0;
+  height: 0;
+  border-top: 100vh solid black;
+  border-right: 100vw solid transparent;
+  position: absolute;
+}
+.header-darkness2 {
+  transform: translateX(-1px);
+  width: 0;
+  height: 0;
+  border-bottom: 100vh solid  black;
+  border-left: 100vw solid transparent;
+  position: absolute;
+}
 }

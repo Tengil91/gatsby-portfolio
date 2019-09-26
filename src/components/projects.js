@@ -27,6 +27,7 @@ class Projects extends React.Component {
           className={`project-position-${i % 2 + 1}`} 
           tags={node.node.frontmatter.tags} 
           href={node.node.fields.slug}
+          key={`p${i}`}
         />
       )
     });

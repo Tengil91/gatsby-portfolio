@@ -24,21 +24,24 @@ class Header extends React.Component {
     this.dark = darknessOffset > 0;
   }
   componentDidMount(){
-    setTimeout(() => {
-      let darkness1 = document.querySelector('.header-darkness1');
-      let darkness2 = document.querySelector('.header-darkness2');
-
-      darkness1.style.transition = `all 1500ms`;
-      darkness2.style.transition = `all 1500ms`;
-      darkness1.style.transform = `translateX(-60vw)`;
-      darkness2.style.transform = `translateX(60vw)`;
+    if(window.innerWidth >= 800){
+        
       setTimeout(() => {
-        darkness1.style.transition = `all 0ms`;
-        darkness2.style.transition = `all 0ms`;
-        window.addEventListener('scroll', this.headerHandler);
-      }, 1000);
-      
-    }, 300);
+        let darkness1 = document.querySelector('.header-darkness1');
+        let darkness2 = document.querySelector('.header-darkness2');
+
+        darkness1.style.transition = `all 1500ms`;
+        darkness2.style.transition = `all 1500ms`;
+        darkness1.style.transform = `translateX(-60vw)`;
+        darkness2.style.transform = `translateX(60vw)`;
+        setTimeout(() => {
+          darkness1.style.transition = `all 0ms`;
+          darkness2.style.transition = `all 0ms`;
+          window.addEventListener('scroll', this.headerHandler);
+        }, 1000);
+        
+      }, 300);
+    }
   }
   render(){
     return (
