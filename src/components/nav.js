@@ -33,7 +33,6 @@ class Nav extends React.Component {
     let navMenu = document.querySelector('.nav-menu-part');
     let lis = document.querySelectorAll('.nav-menu-part li');
     let a = document.querySelectorAll('.nav-menu-part a')
-    console.log(document.getElementById('contact').getBoundingClientRect().top);
     if(document.getElementById('home').getBoundingClientRect().top < 0){
       a[0].classList.add('active');
       a[1].classList.remove('active');
