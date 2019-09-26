@@ -2,7 +2,7 @@ import React from 'react';
 export default () => (
   <footer id="contact">
     <div className="contact-info">
-      <img className="contact-image" src="/static/proj-img.jpg" />
+      <img className="contact-image" src="/static/footer-img2.jpg" />
     </div>
     <div className="contact-links">
       <h2>I'm Niklas Silfverhielm,</h2>

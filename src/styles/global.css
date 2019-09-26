@@ -356,14 +356,4 @@ footer {
   .project-description-content {
     width: 67%;
   }
-  .contact-links a:hover::after {
-    content: " ";
-    display: block;
-    position: relative;
-    top: -200px;
-    left: 200px;
-    width: 329px;
-    height: 186px;
-    background-image: url('/static/genos.jpg');
-  }
 }
