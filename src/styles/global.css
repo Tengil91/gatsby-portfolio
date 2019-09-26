@@ -145,7 +145,6 @@ body {
 .project-container h2 {
   position: absolute;
   top: 50%;
-  left: -25px;
   transform: translateY(-50%);
   background-color: #00000040;
 }
@@ -341,20 +340,24 @@ footer {
   .project-description-content {
     width: 67%;
   }
-.header-darkness1 {
-  transform: translateX(1px);
-  width: 0;
-  height: 0;
-  border-top: 100vh solid black;
-  border-right: 100vw solid transparent;
-  position: absolute;
-}
-.header-darkness2 {
-  transform: translateX(-1px);
-  width: 0;
-  height: 0;
-  border-bottom: 100vh solid  black;
-  border-left: 100vw solid transparent;
-  position: absolute;
-}
+  .header-darkness1 {
+    transform: translateX(1px);
+    width: 0;
+    height: 0;
+    border-top: 100vh solid black;
+    border-right: 100vw solid transparent;
+    position: absolute;
+  }
+  .header-darkness2 {
+    transform: translateX(-1px);
+    width: 0;
+    height: 0;
+    border-bottom: 100vh solid  black;
+    border-left: 100vw solid transparent;
+    position: absolute;
+  }
+  
+  .project-container h2 {
+    left: -25px;
+  }
 }
