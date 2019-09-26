@@ -4,9 +4,13 @@ import Nav from '../components/nav';
 import Header from '../components/header';
 import Projects from '../components/projects';
 import Footer from '../components/footer';
+import { Helmet } from "react-helmet";
 
 const IndexPage = ( {data}) => (
   <div>
+    <Helmet>
+      <title>Niklas Silfverhielm</title>
+    </Helmet>
     <Nav />
     <Header />
     <Projects data={data} />
