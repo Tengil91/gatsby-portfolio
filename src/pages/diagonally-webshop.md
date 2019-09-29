@@ -5,6 +5,7 @@ tags: "HTML JS CSS jQuery"
 date: "2019-04-10"
 srcs: "diagonally-webshop-1.jpg diagonally-webshop-2.jpg diagonally-webshop-3.jpg"
 pagelink: "https://diagonally-webshop.netlify.com/"
+pagetype: "project"
 ---
 Me and my friend Anna Zetterström are huge Harry Potter fans and we really went all in on trying to bring some magic to this site.
 

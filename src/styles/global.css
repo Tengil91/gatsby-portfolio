@@ -2,7 +2,6 @@
   box-sizing: border-box;
 }
 body {
-  color: #ffc;
   scroll-behavior: smooth;
   margin: 0;
   padding: 0;
@@ -77,6 +76,7 @@ body {
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
+  color: #ffc;
 }
 .main-header-texts h2 {
   font-size: 18px;
@@ -179,6 +179,7 @@ body {
   background-color: #000000aa;
   padding: 10px;
   font-size: 24px;
+  color: #ffc;
 }
 .tags-div li {
   margin-top: 5px;
@@ -196,6 +197,7 @@ body {
   width: 100%;
   padding: 10px;
   background-image: linear-gradient(#060300, #120600);
+  color: #ffc;
 }
 .project-description-content {
   background-color: #000;
@@ -360,4 +362,9 @@ footer {
   .project-container h2 {
     left: -25px;
   }
+}
+
+.blog-page-content {
+  max-width: 700px;
+  margin: auto;
 }

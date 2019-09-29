@@ -5,6 +5,7 @@ tags: "HTML JS CSS Jekyll SASS Anime.js"
 date: "2019-09-10"
 srcs: "gta-5-1.jpg"
 pagelink: "https://grandtheftauto.netlify.com/"
+pagetype: "project"
 ---
 A web site made with Jekyll. I was mainly responsible for the front page.
 

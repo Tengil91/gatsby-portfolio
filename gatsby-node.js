@@ -20,6 +20,9 @@ exports.createPages = async ({ graphql, actions }) => {
       allMarkdownRemark {
         edges {
           node {
+            frontmatter {
+              pagetype
+            }
             fields {
               slug
             }
@@ -30,12 +33,22 @@ exports.createPages = async ({ graphql, actions }) => {
   `)
 
   result.data.allMarkdownRemark.edges.forEach(({ node }) => {
-    createPage({
-      path: node.fields.slug,
-      component: path.resolve(`./src/templates/project-description.js`),
-      context: {
-        slug: node.fields.slug,
-      },
-    })
+    if(node.frontmatter.pagetype === 'project'){
+      createPage({
+        path: node.fields.slug,
+        component: path.resolve(`./src/templates/project-description.js`),
+        context: {
+          slug: node.fields.slug,
+        },
+      })
+    } else if(node.frontmatter.pagetype === 'blog'){
+      createPage({
+        path: node.fields.slug,
+        component: path.resolve(`./src/templates/blog-page.js`),
+        context: {
+          slug: node.fields.slug,
+        },
+      })
+    }
   })
 }

@@ -8,9 +8,9 @@ export default ({ data }) => {
   const post = data.markdownRemark
   return (
     <div className="project-description-container">
-    <Helmet>
-      <title>{post.frontmatter.title}</title>
-    </Helmet>
+      <Helmet>
+        <title>{post.frontmatter.title}</title>
+      </Helmet>
       <ProjectDescriptionSidebar
         title={post.frontmatter.title} 
         html={post.html} 

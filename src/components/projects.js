@@ -18,18 +18,24 @@ class Projects extends React.Component {
     })
   }
   render(){
+    let counteri = 0;
     let projects = this.data.data.allMarkdownRemark.edges.map( (node, i) => {
-      return (
-        <Project
-          src={node.node.frontmatter.src}
-          title={node.node.frontmatter.title}
-          href={node.node.frontmatter.href} 
-          className={`project-position-${i % 2 + 1}`} 
-          tags={node.node.frontmatter.tags} 
-          href={node.node.fields.slug}
-          key={`p${i}`}
-        />
-      )
+      if(node.node.frontmatter.pagetype === 'project'){
+        return (
+          <Project
+            src={node.node.frontmatter.src}
+            title={node.node.frontmatter.title}
+            href={node.node.frontmatter.href} 
+            className={`project-position-${(i - counteri) % 2 + 1}`} 
+            tags={node.node.frontmatter.tags} 
+            href={node.node.fields.slug}
+            key={`p${(i - counteri)}`}
+          />
+        )
+      } else {
+        counteri++;
+        return "";
+      }
     });
     return (
       <div className="projects-wrapper" id="projects">
